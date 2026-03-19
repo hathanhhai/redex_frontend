@@ -4,7 +4,7 @@ services:
   react-app:
     build:
       context: .
-      dockerfile: ./dockerfile.prod
+      dockerfile: dockerfile.prod
     container_name: redex_frontend
     environment:
       - VITE_API_BASE_URL=https://redex-be.congcucuatoi.com/
@@ -12,4 +12,6 @@ services:
       - "2046:3000"
     volumes:
       - /hthai/jenkins_data/workspace/redex_frontend:/app
-    command: ["npm", "run", "start", "--", "--host",]
+      # - .:/app
+      - /app/node_modules
+    # command: ["npm", "run", "start", "--", "--host",]
