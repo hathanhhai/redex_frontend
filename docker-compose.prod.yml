@@ -11,5 +11,5 @@ services:
     ports:
       - "2046:3000"
     volumes:
-      - .:/app
+      - /hthai/jenkins_data/workspace/redex_frontend:/app
     command: ["npm", "run", "start", "--", "--host",]
