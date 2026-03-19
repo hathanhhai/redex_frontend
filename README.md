@@ -3,7 +3,7 @@
 Setup local
 
 Just run cmd below:
-**docker compose -f docker-compose.yml -p redex_frontend up --build -d --force-recreate **
+**docker compose -f docker-compose.yml -p redex_frontend up --build -d --force-recreate**
 
 
 it will run port: loclhost:2046
