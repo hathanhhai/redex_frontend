@@ -1,9 +1,9 @@
 version: "3.9"
 
 services:
-  react-app:
+  redex_frontend:
     build: .
-    container_name: react-app
+    container_name: redex_frontend
     ports:
       - "2046:5173"
     volumes:
