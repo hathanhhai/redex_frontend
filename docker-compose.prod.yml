@@ -1,0 +1,15 @@
+version: "3.9"
+
+services:
+  react-app:
+    build:
+      context: .
+      dockerfile: ./dockerfile.prod
+    container_name: redex_frontend
+    environment:
+      - VITE_API_BASE_URL=https://redex-be.congcucuatoi.com/
+    ports:
+      - "2046:3000"
+    volumes:
+      - .:/app
+    command: ["npm", "run", "start", "--", "--host",]
