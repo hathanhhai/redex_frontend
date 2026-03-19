@@ -8,7 +8,10 @@ Just run cmd below:
 _after run CMD waiting 1 minute for building_
 
 
-it will run port: loclhost:2046
+it will run port: 
+
+**localhost:2046**
+
  + I used material UI
  + Redux devtoolkit
  + Call API to Laravel
