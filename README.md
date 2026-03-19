@@ -5,6 +5,8 @@ Setup local
 Just run cmd below:
 **docker compose -f docker-compose.yml -p redex_frontend up --build -d --force-recreate**
 
+_after run CMD waiting 1 minute for building_
+
 
 it will run port: loclhost:2046
  + I used material UI
